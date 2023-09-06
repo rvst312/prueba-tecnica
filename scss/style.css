@@ -277,7 +277,217 @@ header .center .logo img {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 15px;
 }
-.three-section .view-more span h4 {
-  min-width: 150px;
+.three-section .view-more h4 {
+  font-family: "Caveat", cursive;
+  font-size: 24px;
+  color: #978510;
+  max-width: 130px;
+  text-align: center;
+}
+.three-section .info {
+  padding: 20px;
+}
+.three-section .info img {
+  margin-top: 20px;
+}
+.three-section .info h5 {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #978510;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.three-section .info p {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 15px;
+}
+.three-section .info a {
+  border-radius: 0;
+  color: #978510;
+  border: 1px #978510 solid;
+  padding: 15px;
+}
+
+.four-section {
+  background-color: #fff;
+  padding: 20px;
+}
+.four-section .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  padding-top: 50px;
+}
+.four-section .title h2 {
+  font-size: 42px;
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+.four-section .title h4 {
+  font-family: "Caveat", cursive;
+  font-size: 42px;
+  margin-top: -25px;
+  color: #978510;
+  text-align: center;
+}
+.four-section .title a img {
+  width: 54px;
+}
+.four-section .cards {
+  margin-bottom: 50px;
+}
+.four-section .cards .card1 {
+  height: 400px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  padding: 20px;
+  background-image: url("/img/property_4.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.four-section .cards .card1 h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: #fff;
+}
+.four-section .cards .card1 p {
+  color: #fff;
+  font-size: 15px;
+}
+.four-section .cards .card2 {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  padding: 20px;
+  background-image: url("/img/property_3.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.four-section .cards .card2 h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: #fff;
+}
+.four-section .cards .card2 p {
+  color: #fff;
+  font-size: 15px;
+}
+
+.contact .form-contact {
+  background-color: #978510;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+.contact .form-contact h2 {
+  font-size: 40px;
+  font-weight: 300;
+}
+.contact .form-contact .nosotros {
+  margin-top: -30px;
+}
+.contact .form-contact h4 {
+  font-family: "Caveat", cursive;
+  font-size: 45px;
+  color: #fff;
+  text-align: center;
+  margin-top: -25px;
+}
+.contact .form-contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact .form-contact form input {
+  border-bottom: 1px solid #fff;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  background-color: transparent;
+  padding: 15px;
+}
+.contact .form-contact form input::-moz-placeholder {
+  color: #fff;
+}
+.contact .form-contact form input::placeholder {
+  color: #fff;
+}
+.contact .form-contact form .gdrp {
+  display: flex;
+  color: #fff;
+  font-size: 12px;
+  gap: 10px;
+}
+.contact .form-contact form .gdrp .form-check-input {
+  border: 1px #fff solid;
+}
+.contact .form-contact form .gdrp .form-check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact .form-contact form .gdrp a {
+  color: #fff;
+}
+.contact .form-contact form .btn {
+  border-radius: 0px;
+  padding: 15px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+footer a {
+  font-size: 26px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  padding-top: 10px;
+}
+footer .contact-points {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+footer .contact-points a {
+  font-size: 18px;
+}
+footer .legal {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #978510;
+  font-size: 15px;
+  color: #fff;
+}
+footer .legal a {
+  font-size: 15px;
+}
+footer .legal h4 {
+  text-align: center;
+  font-size: 15px;
+}
+
+.whatssap-fixed {
+  position: fixed;
+}
+
+.action-fixed {
+  position: fixed;
 }/*# sourceMappingURL=style.css.map */

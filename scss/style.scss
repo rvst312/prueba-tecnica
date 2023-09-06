@@ -354,11 +354,260 @@ header {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 20px;
-
+        gap: 15px;
 
         h4 {
             font-family: $font-cursive;
+            font-size: 24px;
+            color: #978510;
+            max-width: 130px;
+            text-align: center;
         }
 
     }
+
+    .info {
+        padding: 20px;
+
+        img {
+            margin-top: 20px;
+        }
+
+        h5 {
+            margin-top: 20px;
+            font-size: 20px;
+            color: #978510;
+            line-height: 30px;
+            text-transform: uppercase;
+        }
+
+        p {
+            margin-top: 20px;
+            color: #fff;
+            font-size: 15px;
+        }
+
+        a {
+            border-radius: 0;
+            color: #978510;
+            border: 1px #978510 solid;
+            padding: 15px;
+        }
+    }
+}
+
+.four-section {
+
+    background-color: #fff;
+    padding: 20px;
+
+    .title {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        padding-top: 50px;
+
+        h2 {
+            font-size: 42px;
+            font-weight: 300;
+            letter-spacing: 3px;
+        }
+
+        h4 {
+            font-family: $font-cursive;
+            font-size: 42px;
+            margin-top: -25px;
+            color: #978510;
+            text-align: center;
+        }
+
+        a {
+            img {
+                width: 54px;
+            }
+        }
+    }
+
+    .cards {
+
+        margin-bottom: 50px;
+
+        .card1 {
+            height: 400px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: start;
+            padding: 20px;
+            background-image: url('/img/property_4.jpg');
+            background-position: center;
+            background-size: cover;
+
+            h4 {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 20px;
+                color: #fff;
+            }
+
+            p {
+                color: #fff;
+                font-size: 15px;
+            }
+        }
+
+        .card2 {
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: start;
+            padding: 20px;
+            background-image: url('/img/property_3.jpg');
+            background-position: center;
+            background-size: cover;
+
+            h4 {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 20px;
+                color: #fff;
+            }
+
+            p {
+                color: #fff;
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+.contact {
+
+    .form-contact {
+        background-color: #978510;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 50px;
+
+        h2 {
+            font-size: 40px;
+            font-weight: 300;
+        }
+
+        .nosotros {
+            margin-top: -30px;
+        }
+
+        h4 {
+            font-family: $font-cursive;
+            font-size: 45px;
+            color: #fff;
+            text-align: center;
+            margin-top: -25px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            input {
+                border-bottom: 1px solid #fff;
+                border-top: 0;
+                border-left: 0;
+                border-right: 0;
+                background-color: transparent;
+                padding: 15px;
+
+            }
+
+            input::placeholder {
+                color: #fff;
+            }
+
+            .gdrp {
+                display: flex;
+                color: #fff;
+                font-size: 12px;
+                gap: 10px;
+
+                .form-check-input {
+                    border: 1px #fff solid;
+                }
+
+                .form-check {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                a {
+                    color: #fff;
+                }
+            }
+
+            .btn{
+                border-radius: 0px;
+                padding: 15px;
+            }
+        }
+    }
+}
+
+footer{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+
+    a{
+        font-size: 26px;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+        padding-top: 10px;
+    }
+
+    .contact-points{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        
+        a{
+            font-size: 18px;
+        }
+    }
+
+    .legal{
+        margin-top: 20px;
+        padding: 20px;
+        background-color: #978510;
+        font-size: 15px;
+        color: #fff;
+
+        a{
+            font-size: 15px;
+        }
+
+        h4{
+            text-align: center;
+            font-size: 15px;
+        }
+    }
+}
+
+.whatssap-fixed{
+    position: fixed;
+}
+
+.action-fixed{
+    position: fixed;
+}
