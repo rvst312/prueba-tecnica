@@ -1,0 +1,549 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  background-color: #181d24 !important;
+}
+
+header {
+  height: 90px;
+  background-color: #181d24;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+header .center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+header .center .logo img {
+  width: 150px;
+}
+header .center .language button {
+  background-color: #181d24;
+  border: none;
+}
+
+.menu-bar {
+  top: 0;
+  position: fixed;
+  height: 100vh;
+  width: 70%;
+  background-color: #181d24;
+  z-index: 100;
+  margin-left: -1000px;
+  animation: slideOut 0.3s ease forwards;
+}
+.menu-bar nav {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+.menu-bar nav a {
+  padding: 15px;
+  padding-left: 20px;
+  border: 1px rgba(14, 16, 20, 0.5647058824) solid;
+  width: 100%;
+  color: #978510;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.active {
+  margin-left: 0px;
+  animation: slideIn 0.3s ease forwards;
+}
+@keyframes slideIn {
+  from {
+    left: -200px;
+  }
+  to {
+    left: 0;
+  }
+}
+
+.first-section .main-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("/img/slider.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.first-section .main-img .title h1 {
+  font-size: 80px;
+  font-weight: 300;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 8px;
+  line-height: 75px;
+  animation: slideInTitle 0.5s ease forwards;
+}
+@keyframes slideInTitle {
+  0% {
+    opacity: 0;
+    transform: translateX(-6%);
+  }
+  50% {
+    opacity: 0;
+    transform: translateX(-5%);
+  }
+  90% {
+    opacity: 0.1;
+    transform: translateX(-3%);
+  }
+  100% {
+    opacity: 0.8;
+    transform: translateX(0);
+  }
+}
+.first-section .main-img h2 {
+  text-align: center;
+  font-family: "Caveat", cursive;
+  font-size: 45px;
+  color: #fff;
+  letter-spacing: 3px;
+}
+
+form .filters {
+  padding: 20px;
+}
+form .filters select {
+  border-radius: 0;
+  padding: 15px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #6f6f6f;
+}
+form .filters .row .col a {
+  width: 100%;
+  padding: 15px;
+  border-radius: 0;
+}
+form .filters .row .col button {
+  width: 100%;
+  padding: 15px;
+  border-radius: 0;
+  background-color: #ffcb00;
+}
+
+.second-section {
+  background-image: url("/img/banner-01-home.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.second-section .call-to-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+  gap: 20px;
+}
+.second-section .call-to-action h2 {
+  font-family: "Caveat", cursive;
+  color: #978510;
+  font-size: 60px;
+  letter-spacing: 3px;
+}
+.second-section .boxes .box {
+  margin: 20px;
+  height: 330px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #181d24;
+  z-index: 10;
+}
+.second-section .boxes .box .top {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+.second-section .boxes .box .top .yellow {
+  width: 50px;
+  min-height: 115px;
+  background-color: #ffcb00;
+}
+.second-section .boxes .box .top h4 {
+  color: #ffcb00;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  padding: 20px;
+  width: 100%;
+}
+.second-section .boxes .box .buttom {
+  width: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: start;
+}
+.second-section .boxes .box .buttom .gray {
+  width: 40px;
+  min-height: 115px;
+  background-color: #6f6f6f;
+}
+.second-section .boxes .box .buttom span {
+  font-size: 56px;
+  color: #fff;
+  padding: 20px;
+  font-weight: 300;
+}
+.second-section .boxes .box .buttom h4 {
+  color: #fff;
+  padding: 20px 0px;
+  font-size: 16px;
+}
+
+.three-section .title-top {
+  padding: 100px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.three-section .title-top h2 {
+  font-size: 40px;
+  font-weight: 300;
+  color: #fff;
+  letter-spacing: 3px;
+}
+.three-section .title-top h4 {
+  font-family: "Caveat", cursive;
+  font-size: 40px;
+  letter-spacing: 3px;
+  color: #978510;
+  margin-top: -25px;
+}
+.three-section .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  width: 100%;
+  border-radius: 0;
+  background-color: #3c4146;
+  color: #fff;
+}
+.three-section .card .bottom {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.three-section .card .bottom .content-card {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+}
+.three-section .card .bottom .ref {
+  background-color: #978510;
+  padding: 3px 20px;
+}
+.three-section .card .bottom .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.three-section .card .bottom .title .left h4 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.three-section .card .bottom .content .price {
+  font-size: 24px;
+  color: #ffcb00;
+}
+.three-section .card:hover {
+  background-color: #181d24;
+}
+.three-section .photos {
+  padding: 20px;
+}
+.three-section .photos img {
+  margin-top: 20px;
+}
+.three-section .photos h2 {
+  margin-top: 20px;
+  font-size: 40px;
+  font-weight: 300;
+  color: #fff;
+  letter-spacing: 3px;
+}
+.three-section .photos h4 {
+  font-family: "Caveat", cursive;
+  font-size: 40px;
+  letter-spacing: 3px;
+  color: #978510;
+  margin-top: -25px;
+}
+.three-section .photos a {
+  width: 100%;
+  border-radius: 0;
+  padding: 15px;
+  background-color: #978510;
+  border: none;
+}
+.three-section .title2 {
+  text-align: center;
+}
+.three-section .title2 h2 {
+  margin-top: 50px;
+  font-size: 40px;
+  font-weight: 300;
+  color: #fff;
+  letter-spacing: 3px;
+}
+.three-section .title2 h4 {
+  font-family: "Caveat", cursive;
+  font-size: 40px;
+  letter-spacing: 3px;
+  color: #978510;
+  margin-top: -25px;
+}
+.three-section .card2 {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  width: 100%;
+  border-radius: 0;
+  color: #fff;
+}
+.three-section .card2 .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.three-section .card2 .bottom .price {
+  color: #978510;
+}
+.three-section .view-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.three-section .view-more h4 {
+  font-family: "Caveat", cursive;
+  font-size: 24px;
+  color: #978510;
+  max-width: 130px;
+  text-align: center;
+}
+.three-section .info {
+  padding: 20px;
+}
+.three-section .info img {
+  margin-top: 20px;
+}
+.three-section .info h5 {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #978510;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.three-section .info p {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 15px;
+}
+.three-section .info a {
+  border-radius: 0;
+  color: #978510;
+  border: 1px #978510 solid;
+  padding: 15px;
+}
+
+.four-section {
+  background-color: #fff;
+  padding: 20px;
+}
+.four-section .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  padding-top: 50px;
+}
+.four-section .title h2 {
+  font-size: 42px;
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+.four-section .title h4 {
+  font-family: "Caveat", cursive;
+  font-size: 42px;
+  margin-top: -25px;
+  color: #978510;
+  text-align: center;
+}
+.four-section .title a img {
+  width: 54px;
+}
+.four-section .cards {
+  margin-bottom: 50px;
+}
+.four-section .cards .card1 {
+  height: 400px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  padding: 20px;
+  background-image: url("/img/property_4.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.four-section .cards .card1 h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: #fff;
+}
+.four-section .cards .card1 p {
+  color: #fff;
+  font-size: 15px;
+}
+.four-section .cards .card2 {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  padding: 20px;
+  background-image: url("/img/property_3.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.four-section .cards .card2 h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: #fff;
+}
+.four-section .cards .card2 p {
+  color: #fff;
+  font-size: 15px;
+}
+
+.contact .form-contact {
+  background-color: #978510;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+.contact .form-contact h2 {
+  font-size: 40px;
+  font-weight: 300;
+}
+.contact .form-contact .nosotros {
+  margin-top: -30px;
+}
+.contact .form-contact h4 {
+  font-family: "Caveat", cursive;
+  font-size: 45px;
+  color: #fff;
+  text-align: center;
+  margin-top: -25px;
+}
+.contact .form-contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact .form-contact form input {
+  border-bottom: 1px solid #fff;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  background-color: transparent;
+  padding: 15px;
+}
+.contact .form-contact form input::-moz-placeholder {
+  color: #fff;
+}
+.contact .form-contact form input::placeholder {
+  color: #fff;
+}
+.contact .form-contact form .gdrp {
+  display: flex;
+  color: #fff;
+  font-size: 12px;
+  gap: 10px;
+}
+.contact .form-contact form .gdrp .form-check-input {
+  border: 1px #fff solid;
+}
+.contact .form-contact form .gdrp .form-check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact .form-contact form .gdrp a {
+  color: #fff;
+}
+.contact .form-contact form .btn {
+  border-radius: 0px;
+  padding: 15px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+footer a {
+  font-size: 26px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  padding-top: 10px;
+}
+footer .contact-points {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+footer .contact-points a {
+  font-size: 18px;
+}
+footer .legal {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #978510;
+  font-size: 15px;
+  color: #fff;
+}
+footer .legal a {
+  font-size: 15px;
+}
+footer .legal h4 {
+  text-align: center;
+  font-size: 15px;
+}
+
+.whatssap-fixed {
+  position: fixed;
+}
+
+.action-fixed {
+  position: fixed;
+}/*# sourceMappingURL=style.css.map */

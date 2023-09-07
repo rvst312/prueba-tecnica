@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio | InmoValley</title>
+    <link rel="stylesheet" href="/scss/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="icon" href="/img/icon logo.svg" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <div class="left">
+            <div class="menu-button">
+                <i class="fa fa-bars" style="color: #ffffff;"></i>
+            </div>
+        </div>
+        <div class="center">
+            <div class="logo">
+                <img src="/img/logo_header.svg" alt="INMOVALLEY" class="img-fluid">
+            </div>
+            <div class="language">
+                <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                    data-bs-title="<a href=#>EN</a>" data-bs-html="true">
+                    <img src="/img/es.svg" alt="seleccione idioma">
+                    <i class="fas fa-caret-down" style="color: #ffffff;"></i>
+                </button>
+
+            </div>
+        </div>
+        <div class="right">
+            <div class="search">
+                <a href="">
+                    <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="menu-bar">
+        <div class="disable-buttom">
+            <i class="fa-solid fa-xmark" style="color: #ffffff;font-size: 25px;padding: 20px;"></i>
+        </div>
+        <nav>
+            <a style="background-color: #978510;color: #fff;" href="">INICIO</a>
+            <a href="">EMPRESA</a>
+            <a href="">PROPIEDADES</a>
+            <a style="background-color: #333333;" href="">VER TODAS LAS PROPIEDADES</a>
+            <a style="background-color: #333333;" href="">ALQUILER A LARGO PLAZO</a>
+            <a style="background-color: #333333;" href="">NUEVA CONSTRUCCIÓN</a>
+            <a style="background-color: #333333;" href="">VENTA</a>
+            <a href="">SERVICIOS</a>
+            <a href="">VENDER</a>
+            <a href="">BLOG</a>
+            <a href="">CONTACTAR</a>
+
+            <a href="">
+                <i class="fa fa-heart" style="color: #978510;font-size: 24px;" aria-hidden="true"></i>
+            </a>
+        </nav>
+    </div>
+
+    <section class="first-section">
+        <div class="main-img img-fluid">
+            <div class="title">
+                <h1>
+                    INMO VALLEY
+                </h1>
+                <h2>
+                    Siempre a tu lado
+                </h2>
+            </div>
+        </div>
+
+        <form action="">
+            <div class="filters">
+                <select class="form-select" name="Estado" id="miSelect" aria-label="Default select example">
+                    <option disabled selected>Estado</option>
+                    <option value="Alquiler a largo plazo">Alquiler a largo plazo</option>
+                    <option value="Nueva construcción">Nueva construcción</option>
+                    <option value="Venta">Venta</option>
+                </select>
+
+                <div class="row">
+                    <div class="col">
+                        <select class="form-select form-control" name="Tipo" id="" aria-label="Default select example">
+                            <option disabled selected>Tipo</option>
+                            <option value="Adosado">Adosado</option>
+                            <option value="Atico">Ático</option>
+                            <option value="Casa">Casa</option>
+                            <option value="Casa con terreno">Casa con terreno</option>
+                            <option value="Casa de campo">Casa de campo</option>
+                            <option value="Casa de pueblo">Casa de pueblo</option>
+                            <option value="Chalet">Chalet</option>
+                            <option value="Despacho">Despacho</option>
+                            <option value="Entresuelo">Entresuelo</option>
+                            <option value="Finca rustica">Finca rústica</option>
+                            <option value="Garaje">Garaje</option>
+                            <option value="Local comercial">Local comercial</option>
+                            <option value="nave industrial">nave industrial</option>
+                            <option value="Oficina">Oficina</option>
+                            <option value="Parcela">Parcela</option>
+                            <option value="Piso">Piso</option>
+                            <option value="Planta baja">Planta baja</option>
+                            <option value="Solar">Solar</option>
+                            <option value="Terreno industrial">Terreno industrial</option>
+                            <option value="Terreno rural">Terreno rural</option>
+                            <option value="Terreno urbano">Terreno urbano</option>
+                        </select>
+                    </div>
+
+                    <div class="col">
+                        <select class="form-select form-control" name="Población" id=""
+                            aria-label="Default select example">
+                            <option disabled selected>Población</option>
+                            <option value="Adosado">Adosado</option>
+                            <option value="Atico">Ático</option>
+                            <option value="Casa">Casa</option>
+                            <option value="Casa con terreno">Casa con terreno</option>
+                            <option value="Casa de campo">Casa de campo</option>
+                            <option value="Casa de pueblo">Casa de pueblo</option>
+                            <option value="Chalet">Chalet</option>
+                            <option value="Despacho">Despacho</option>
+                            <option value="Entresuelo">Entresuelo</option>
+                            <option value="Finca rustica">Finca rústica</option>
+                            <option value="Garaje">Garaje</option>
+                            <option value="Local comercial">Local comercial</option>
+                            <option value="nave industrial">nave industrial</option>
+                            <option value="Oficina">Oficina</option>
+                            <option value="Parcela">Parcela</option>
+                            <option value="Piso">Piso</option>
+                            <option value="Planta baja">Planta baja</option>
+                            <option value="Solar">Solar</option>
+                            <option value="Terreno industrial">Terreno industrial</option>
+                            <option value="Terreno rural">Terreno rural</option>
+                            <option value="Terreno urbano">Terreno urbano</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <select class="form-select form-control" name="Precio hasta" id=""
+                            aria-label="Default select example">
+                            <option disabled selected>Precio hasta</option>
+                            <option value="25000">25000</option>
+                            <option value="50000">50000</option>
+                            <option value="75000">75000</option>
+                            <option value="100000">100000</option>
+                            <option value="125000">125000</option>
+                            <option value="150000">150000</option>
+                            <option value="175000">175000</option>
+                            <option value="200000">200000</option>
+                            <option value="225000">225000</option>
+                            <option value="250000">250000</option>
+                            <option value="275000">275000</option>
+                            <option value="300000">300000</option>
+                            <option value="350000">350000</option>
+                            <option value="400000">400000</option>
+                            <option value="450000">450000</option>
+                            <option value="500000">500000</option>
+                            <option value="550000">550000</option>
+                            <option value="600000">600000</option>
+                            <option value="650000">650000</option>
+                            <option value="700000">700000</option>
+                            <option value="1000000">+1000000</option>
+                        </select>
+                    </div>
+
+                    <div class="col">
+                        <select class="form-select form-control" name="Precio desde" id=""
+                            aria-label="Default select example">
+                            <option disabled selected>Precio desde</option>
+                            <option value="25000">25000</option>
+                            <option value="50000">50000</option>
+                            <option value="75000">75000</option>
+                            <option value="100000">100000</option>
+                            <option value="125000">125000</option>
+                            <option value="150000">150000</option>
+                            <option value="175000">175000</option>
+                            <option value="200000">200000</option>
+                            <option value="225000">225000</option>
+                            <option value="250000">250000</option>
+                            <option value="275000">275000</option>
+                            <option value="300000">300000</option>
+                            <option value="350000">350000</option>
+                            <option value="400000">400000</option>
+                            <option value="450000">450000</option>
+                            <option value="500000">500000</option>
+                            <option value="550000">550000</option>
+                            <option value="600000">600000</option>
+                            <option value="650000">650000</option>
+                            <option value="700000">700000</option>
+                            <option value="1000000">+1000000</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <a class="btn  btn-dark button-search-reset" href="javascript:void(0);">
+                            Limpiar filtros
+                        </a>
+                    </div>
+
+                    <div class="col">
+                        <button class="btn btn-secondary btn-search d-block text-white">
+                            Buscar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <section class="second-section">
+        <div class="call-to-action">
+            <h2>Elige tu futuro</h2>
+            <img src="/img/icon logo.svg" alt="">
+        </div>
+
+        <div class="boxes">
+
+            <div class="box">
+                <div class="top">
+                    <span class="yellow"></span>
+                    <h4>Pisos en Elche</h4>
+                </div>
+                <div class="buttom">
+                    <span class="gray"></span>
+                    <span>20</span>
+                    <h4>PROPIEDADES</h4>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="top">
+                    <span class="yellow"></span>
+                    <h4>Chalets en Elche</h4>
+                </div>
+                <div class="buttom">
+                    <span class="gray"></span>
+                    <span>16</span>
+                    <h4>PROPIEDADES</h4>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="top">
+                    <span class="yellow"></span>
+                    <h4>Apartamentos Santa Pola</h4>
+                </div>
+                <div class="buttom">
+                    <span class="gray"></span>
+                    <span>4</span>
+                    <h4>PROPIEDADES</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="three-section">
+        <div class="title-top">
+            <h2>PROPIEDAD</h2>
+            <h4>Del mes</h4>
+        </div>
+
+        <div class="card">
+            <div class="top-image">
+                <img class="img-fluid" src="/img/property_month.jpg" alt="">
+            </div>
+            <div class="bottom">
+                <span class="ref">REF: CH-235</span>
+                <div class="content-card">
+                    <div class="title">
+                        <div class="left">
+                            <h4>Chalet</h4>
+                            <h6>Venta</h6>
+                        </div>
+                        <div class="right">
+                            <i class="fa fa-heart" style="color: #978510;font-size: 24px;"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <span>
+                            <p>
+                                Elche · Torreta - Portelada
+                            </p>
+                            <p>
+                                <strong>320</strong> m² · <strong>297</strong> m² · <strong>5</strong> Habitaciones ·
+                                <strong>3</strong> Baños · <strong>Piscina</strong>
+                            </p>
+                        </span>
+                        <span class="price">
+                            494.900 €
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="photos">
+            <div>
+                <img class="img-fluid" src="/img/image_sell.jpg" alt="">
+            </div>
+            <div>
+                <img class="img-fluid" src="/img/icon logo.svg" alt="">
+            </div>
+            <span>
+                <h2>VENDE TU PROPIEDAD</h2>
+                <h4>Con Nosotros</h4>
+            </span>
+
+            <a class="btn btn-primary mt-3" href="">
+                Quiero vender
+            </a>
+        </div>
+
+        <span class="title2">
+            <h2>PROPIEDADES</h2>
+            <h4>Destacadas</h4>
+        </span>
+
+        <div class="card2">
+            <div class="top">
+                <img class="img-fluid" src="/img/property_1.jpg" alt="propiedad">
+            </div>
+
+            <span class="ref">
+                REF: P-1348
+            </span>
+
+            <div class="bottom">
+                <h4><strong>Piso</strong> Venta</h4>
+                <span>
+                    ELCHE . ASILO - PISOS AZULES
+                </span>
+                <span>
+                    <strong>115m²</strong> . <strong>3</strong>Hab . <strong>2</strong>Baños
+                </span>
+                <span>
+                    <h4 class="price">140.000 €</h4>
+                </span>
+            </div>
+        </div>
+
+        <div class="view-more">
+            <h4>
+                Ver todas las propiedades
+            </h4>
+
+            <a href="">
+                <img src="/img/Icon feather-plus-circle.svg" alt="ver más">
+            </a>
+        </div>
+
+        <div class="info">
+            <div>
+                <img class="img-fluid" src="/img/home-text-img-01.jpg" alt="Nuestra oficina">
+            </div>
+            <div>
+                <img src="/img/icon logo.svg" alt="inmovalley">
+            </div>
+
+            <h5>Bienvenido a nuestra Inmobiliaria. Inmovalley fue fundada en Elche en el año 2005, dedicada a la
+                intermediación inmobiliaria, contando sus componentes con más de veinte años de experiencia en el sector
+                inmobiliario.</h5>
+
+            <p>Desde su apertura, con una primera oficina en la C/ Filet de Fora en Elche (Alicante), la empresa se ha
+                volcado en la gestión de compraventas y arrendamientos de inmuebles en Elche y sus alrededores. En estos
+                años, la confianza de nuestros clientes así como la profesionalidad de nuestros asesores ha ido
+                creciendo
+                constantemente.</p>
+
+            <a class=" btn btn-outline-primary px-4 px-xl-5" href="">
+                Mas sobre nosotros
+            </a>
+        </div>
+    </section>
+
+    <section class="four-section">
+
+        <div class="title">
+            <span>
+                <h2>ÚLTIMAS</h2>
+                <h4>Noticias</h4>
+            </span>
+
+            <a href="">
+                <img class="img-fluid" src="/img/Icon feather-plus-2-circle.svg" alt="ver más">
+            </a>
+        </div>
+
+        <div class="cards">
+            <div class="card1">
+                <span class="title">
+                    <h4>27 JUL 2023</h4>
+                    <p>2 CLAVES FUNDAMENTALES PARA VENDER UNA PROPIEDAD SIN USAR PORTALES INMOBILIARIOS.</p>
+                </span>
+            </div>
+
+            <div class="card2">
+                <span class="title">
+                    <h4>8 JUN 2023</h4>
+                    <p>CÓMO HACER QUE UNA CASA SEA LUMINOSA MÁS LUMINOSA</p>
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+
+        <img class="img-fluid" src="/img/property_1.jpg" alt="">
+
+        <div class="form-contact">
+            <span>
+                <h2>CONTACTA</h2>
+                <h4>Con</h4>
+                <h2 class="nosotros">NOSOTROS</h2>
+            </span>
+
+            <form class="contact-form" action="">
+                <input type="text" name="name" id="name" placeholder="Tu Nombre*">
+                <input type="text" name="phone" id="phone" placeholder="Tu Teléfono">
+                <input type="email" name="mail" id="email" placeholder="Tu Email*">
+                <input type="text" name="message" id="message" placeholder="Mensaje*">
+
+                <div class="gdrp">
+                    <div class="form-check form-check-inline">
+                        <input required class="form-check-input" type="radio" name="inlineRadioOptions"
+                            id="inlineRadio1" value="gdrp">
+                        <label class="form-check-label" for="inlineRadio1"></label>
+                    </div>
+                    <span>
+                        <p>
+                            Marque la casilla para contactarnos y acepte que su información se use de acuerdo con
+                            nuestra
+                            <a href="" target="_blank">Política de privacidad</a>
+                            que se agregará automáticamente a nuestra lista de correo, pero puede cancelarla en
+                            cualquier
+                            momento*
+                        </p>
+                    </span>
+                </div>
+                <button class="btn btn-dark my-2">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+
+        <img class="img-fluid" src="/img/logo_header.svg" alt="">
+        <a href="tel:+34 966274206">966 274 206</a>
+        <a href="mailto:info@inmovalley.com">info@inmovalley.com</a>
+
+        <div class="contact-points">
+            <a href="">INICIO</a>
+            <a href="">Empresa</a>
+            <a href="">Propiedades</a>
+            <a href="">Servicios</a>
+            <a href="">Vender</a>
+            <a href="">Blog</a>
+            <a href="">Contactar</a>
+            <span>
+                <a href="">
+                    <i class="fa fa-heart" style="color: #978510;font-size: 24px;" aria-hidden="true"></i>
+                </a>
+            </span>
+            <i class="fab fa-facebook-f" style="color: #fff;"></i>
+        </div>
+
+        <div class="legal">
+            <p>
+                © 2023 INMOVALLEY ·
+                <a href="">
+                    Nota legal .
+                </a>
+
+                <a href="">
+                    Privacidad .
+                </a>
+                <a href="">
+                    Cookies .
+                </a>
+                <a href="">
+                    Mapa Web .
+                </a>
+                <span>
+                    <h4>Diseño <strong>MEDIAELX</strong></h4>
+                </span>
+            </p>
+        </div>
+    </footer>
+
+    <div class="whatssap-fixed">
+        <img src="" alt="">
+    </div>
+
+    <div class="action-fixed">
+        <a href="">
+            Valora tu propiedad
+        </a>
+    </div>
+
+
+    <script src="/js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/f4c984c021.js" crossorigin="anonymous"></script>
+    <script>
+        // ENABLE TOOLTIP
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+</body>
+
+</html>
