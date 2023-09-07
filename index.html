@@ -23,10 +23,12 @@
                 <img src="/img/logo_header.svg" alt="INMOVALLEY" class="img-fluid">
             </div>
             <div class="language">
-                <a href="#">
-                    <img src="/img/eng_flag.svg" alt="seleccione idioma">
+                <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                    data-bs-title="<a href=#>EN</a>" data-bs-html="true">
+                    <img src="/img/es.svg" alt="seleccione idioma">
                     <i class="fas fa-caret-down" style="color: #ffffff;"></i>
-                </a>
+                </button>
+
             </div>
         </div>
         <div class="right">
@@ -40,22 +42,23 @@
 
     <div class="menu-bar">
         <div class="disable-buttom">
-            <img src="" alt="">
+            <i class="fa-solid fa-xmark" style="color: #ffffff;font-size: 25px;padding: 20px;"></i>
         </div>
         <nav>
-            <a href="">inicio</a>
-            <a href="">inicio</a>
-            <a href="">inicio</a>
-            <a href="">inicio</a>
-            <a href="">inicio</a>
-            <a href="">inicio</a>
-            <a href="">inicio</a>
-            <a href="">inicio</a>
-            <a href="">inicio</a>
-            <a href="">inicio</a>
-            <a href="">inicio</a>
+            <a style="background-color: #978510;color: #fff;" href="">INICIO</a>
+            <a href="">EMPRESA</a>
+            <a href="">PROPIEDADES</a>
+            <a style="background-color: #333333;" href="">VER TODAS LAS PROPIEDADES</a>
+            <a style="background-color: #333333;" href="">ALQUILER A LARGO PLAZO</a>
+            <a style="background-color: #333333;" href="">NUEVA CONSTRUCCIÓN</a>
+            <a style="background-color: #333333;" href="">VENTA</a>
+            <a href="">SERVICIOS</a>
+            <a href="">VENDER</a>
+            <a href="">BLOG</a>
+            <a href="">CONTACTAR</a>
+
             <a href="">
-                <img src="" alt="">
+                <i class="fa fa-heart" style="color: #978510;font-size: 24px;" aria-hidden="true"></i>
             </a>
         </nav>
     </div>
@@ -74,7 +77,7 @@
 
         <form action="">
             <div class="filters">
-                <select class="form-select" name="Estado" id="" aria-label="Default select example">
+                <select class="form-select" name="Estado" id="miSelect" aria-label="Default select example">
                     <option disabled selected>Estado</option>
                     <option value="Alquiler a largo plazo">Alquiler a largo plazo</option>
                     <option value="Nueva construcción">Nueva construcción</option>
@@ -419,7 +422,7 @@
                 <h2 class="nosotros">NOSOTROS</h2>
             </span>
 
-            <form action="">
+            <form class="contact-form" action="">
                 <input type="text" name="name" id="name" placeholder="Tu Nombre*">
                 <input type="text" name="phone" id="phone" placeholder="Tu Teléfono">
                 <input type="email" name="mail" id="email" placeholder="Tu Email*">
@@ -427,8 +430,8 @@
 
                 <div class="gdrp">
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                            value="gdrp">
+                        <input required class="form-check-input" type="radio" name="inlineRadioOptions"
+                            id="inlineRadio1" value="gdrp">
                         <label class="form-check-label" for="inlineRadio1"></label>
                     </div>
                     <span>
@@ -512,6 +515,11 @@
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/f4c984c021.js" crossorigin="anonymous"></script>
+    <script>
+        // ENABLE TOOLTIP
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
 </body>
 
 </html>
